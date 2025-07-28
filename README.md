@@ -58,7 +58,7 @@ Un shootém-up mezclado con run´n-gun de acción en 2D, centrado en un mundo po
     * Abre el proyecto.
 
 ## Estructura del Proyecto (Unity)
-'''
+```text
 Assets/
 ├─ _Scenes/                                   # Escenas del proyecto
 │  ├─ Core/                                   # Escenas base: logo, inicio, términos
@@ -122,7 +122,7 @@ Assets/
 |
 ├─ AddressableAssetsData/                      # AssetBundles y perfiles Addressables
 
-'''
+```
 
 ## Tecnologías Utilizadas
 
