@@ -42,8 +42,14 @@ Un shootém-up mezclado con run´n-gun de acción en 2D, centrado en un mundo po
 
 ### Para Desarrolladores (Abrir el Proyecto en Unity)
 1.  **Clonar el repositorio:**
+    SSH:
     ```bash
-    git clone [https://git-scm.com/book/es/v2/Fundamentos-de-Git-Obteniendo-un-repositorio-Git](https://git-scm.com/book/es/v2/Fundamentos-de-Git-Obteniendo-un-repositorio-Git)
+    git clone git@github.com:eddevios/VegaOdyssey.git
+    ```
+    HTTPS: 
+    ```bash
+    git clone https://github.com/eddevios/VegaOdyssey.git
+
     ```
 2.  **Abrir en Unity:**
     * Abre Unity Hub.
@@ -52,49 +58,71 @@ Un shootém-up mezclado con run´n-gun de acción en 2D, centrado en un mundo po
     * Abre el proyecto.
 
 ## Estructura del Proyecto (Unity)
-
+'''
 Assets/
-├─ _Scenes/                   # 00_Logo, 01_StartScreen, 02_TermsAndConditions…
-│   ├─ Phase1_PlanetSurface   # Alterna con Phase1_SpaceBattle (y así hasta Phase10)
-│   └─ 10_LoadingScene
-├─ AddressableAssetsData/     # Catálogo de bundles y perfiles
-├─ Art/
-│   ├─ Animations/            # PSD bones + Animator Controllers
-│   ├─ Effects/               # Muzzle flashes, explosions
-│   ├─ Sprites/
-│   │   └─ Tiles/             # Tile palettes (EnvironmentPalette_Env)
-│   └─ Logo/
-├─ Audio/
-│   ├─ Music/
-│   └─ SFX/UI/
-├─ Bandits - Pixel Art/       # Pack comercial (enemigos, props)
-├─ JMO Assets/                # Cartoon FX Remaster, Welcome Screen
-├─ Materials/
-├─ Plugins/
-│   └─ CW/LeanPool            # Pooling de objetos
-├─ Prefabs/
-│   ├─ Cinematic/
-│   ├─ Enemies/
-│   │   ├─ Runner/
-│   │   └─ Shooter/
-│   ├─ Player/
-│   │   ├─ Runner/
-│   │   └─ Shooter/
-│   ├─ PlayerBulletsPrefab/
-│   └─ PowerUpPrefab/
-├─ Resources/                 # Carga dinámica fuera de Addressables
-├─ Scripts/
-│   ├─ Cinematic/
-│   ├─ Common/
-│   ├─ Enemies/
-│   ├─ Environment/
-│   ├─ Input/
-│   ├─ Managers/              # GameManager, AudioManager, LocalizationManager
-│   ├─ Player/
-│   ├─ UI/
-│   └─ Weapon/
-└─ Settings/                  # Input System, URP, HDR, Quality
+├─ _Scenes/                                   # Escenas del proyecto
+│  ├─ Core/                                   # Escenas base: logo, inicio, términos
+│  │  ├─ 00_Logo.unity                        # Logotipo animado, pantallas intro
+│  │  ├─ 01_StartScreen.unity                 # Menú principal
+│  │  ├─ 02_TermsAndConditions.unity         # Términos y condiciones
+│  │  └─ 10_LoadingScene.unity                # Carga nivel con addressables
+│  └─ Phases/                                # Fases de juego (10 niveles)
+│     ├─ Phase1_SpaceBattle.unity             # Nivel espacial fase 1
+│     ├─ Phase1_PlanetSurface.unity           # Modo terrestre fase 1
+│     ├─ ... hasta Phase10_*
+│
+├─ Art/                                       # Recursos visuales
+│  ├─ Sprites/                                # Sprites en pixel art
+│  │  ├─ Player/                              # Nave del jugador
+│  │  ├─ Enemies/                             # Enemigos y props
+│  │  └─ Tiles/                               # Tiles de entorno
+│  ├─ Animations/                             # Animaciones, controllers
+│  └─ Effects/                                # Explosiones, partículas (FX Cartoon Remaster)
+│
+├─ Audio/                                     # Música y efectos sonoros
+│  ├─ Music/
+│  └─ SFX/
+│
+├─ Prefabs/                                   # Prefabs de objetos instanciables
+│  ├─ Player/                                 # Nave y personaje terrestre
+│  ├─ Enemies/                                # Enemigos y bosses
+│  ├─ Bosses/                                 # Jefes por fase
+│  └─ PowerUps/                               # Mejoras y power-ups
+│
+├─ Scripts/                                   # Código en C#
+│  ├─ Core/                                   # Sistema central
+│  │  ├─ GameManager.cs                       # Controlador principal del ciclo
+│  │  ├─ SceneLoader.cs                       # Carga escenas asíncronas con Addressables
+│  │  ├─ PhaseController.cs                   # Gestiona fases y transiciones
+│  │  └─ SaveSystem.cs                        # Guardado y carga
+│  ├─ Player/                                 # Scripts del jugador
+│  │  ├─ PlayerShipController.cs              # Control nave shoot’em-up
+│  │  ├─ RunnerController.cs                   # Control personaje terrestre
+│  │  ├─ WeaponWheel.cs                        # Selección rotatoria de armas
+│  │  └─ Weapon.cs                             # lógica de armas, balas
+│  ├─ Enemies/                                # IA y enemigos
+│  │  ├─ EnemyBase.cs                         # Clase base
+│  │  ├─ BossAI.cs                            # IA específico de bosses
+│  │  └─ Spawner.cs                           # Spawners y control de oleadas
+│  ├─ UI/                                     # Elementos HUD y controles
+│  │  ├─ HUDController.cs                     # Vida, arma, estado del juego
+│  │  └─ LifeBarSegment.cs                     # Vida segmentada
+│  ├─ Data/                                   # ScriptableObjects y datos
+│  │  ├─ PlayerStatsSO.cs                     # Estado del jugador
+│  │  └─ BossDataSO.cs                        # Datos boss
+│  └─ Utilities/                              # Utilidades diversas
+│     ├─ ServiceLocator.cs                     # Registro global de servicios
+│     ├─ Extensions.cs                         # Métodos de extensión útiles
+│     └─ InputManager.cs                       # Manejo de input (Input System)
+│
+├─ Settings/                                  # Configuración del proyecto
+│  ├─ Input/                                  # Archivos de Input System
+│  ├─ Graphics/                               # Configuración de renderizado
+│  └─ Quality/                                # Settings de calidad
+|
+├─ AddressableAssetsData/                      # AssetBundles y perfiles Addressables
 
+'''
 
 ## Tecnologías Utilizadas
 

@@ -1,0 +1,380 @@
+.
+├── .DS_Store
+├── .git
+│   ├── COMMIT_EDITMSG
+│   ├── config
+│   ├── description
+│   ├── HEAD
+│   ├── hooks
+│   │   ├── applypatch-msg.sample
+│   │   ├── commit-msg.sample
+│   │   ├── fsmonitor-watchman.sample
+│   │   ├── post-update.sample
+│   │   ├── pre-applypatch.sample
+│   │   ├── pre-commit.sample
+│   │   ├── pre-merge-commit.sample
+│   │   ├── pre-push.sample
+│   │   ├── pre-rebase.sample
+│   │   ├── pre-receive.sample
+│   │   ├── prepare-commit-msg.sample
+│   │   ├── push-to-checkout.sample
+│   │   └── update.sample
+│   ├── index
+│   ├── info
+│   │   └── exclude
+│   ├── logs
+│   │   ├── HEAD
+│   │   └── refs
+│   │       ├── heads
+│   │       └── remotes
+│   ├── objects
+│   │   ├── 02
+│   │   │   ├── 5829a566976cf8911e51048b07b4e758524f25
+│   │   │   └── 624c9d13fdd3f7ebfd10c59862e1aaac71b95e
+│   │   ├── 05
+│   │   │   └── 8d1b189fceda35d4860d618860e2b15990e90d
+│   │   ├── 07
+│   │   │   ├── 1f8727b908b996c46d657463fd4a06f931bcf5
+│   │   │   └── 49cdc474b48b67139ba1afba96b828fb2b9ed6
+│   │   ├── 14
+│   │   │   ├── 20639bf5dd108fa28f7918bd1ce8546488645e
+│   │   │   └── 45b101c3d68ebc7ee0e616875c0095f7b4f6ab
+│   │   ├── 15
+│   │   │   └── 751badb069a88baa8c936f1d15c7f0605aca7e
+│   │   ├── 16
+│   │   │   └── 48369c242d5fc0b19b609e9f0cad522967cbb7
+│   │   ├── 17
+│   │   │   └── f0288d25e02fb64ddacce42018f7ecfe5b3e91
+│   │   ├── 18
+│   │   │   └── e5d70d0c50fdd597942f0b95efc1723e62170b
+│   │   ├── 1d
+│   │   │   ├── 3ed1f3544da156b5bed0f3a21e87575a590ede
+│   │   │   └── a2eeed3dda094403d7ce6e5a342eb4b7625cc9
+│   │   ├── 1e
+│   │   │   └── b8057da5b62459dea649913afe90c5f662c5cd
+│   │   ├── 1f
+│   │   │   └── 5c8048026a118a15cef9d6b46e4e8b530694e8
+│   │   ├── 20
+│   │   │   └── 72cd9783e3df0675ebd19606bd3998e0412c00
+│   │   ├── 23
+│   │   │   └── 4c8df11b06ff8f1dd064cbdfdad14430cb1643
+│   │   ├── 26
+│   │   │   ├── 207f900e83ae6782732dd45c48697ef7d1e393
+│   │   │   └── 2cbff303e0eb1ee27295556eca9c634010c8db
+│   │   ├── 28
+│   │   │   ├── 691159832bb046a3a3e706a8d9b75b24b269a5
+│   │   │   └── c10afb6e17452906c4010a03203fbde2883791
+│   │   ├── 29
+│   │   │   └── a834c07adcaa1496b897939c993f38142d6f7b
+│   │   ├── 2c
+│   │   │   ├── 5c6597c0272e86d03ed4a16396ca4fe0a06b7b
+│   │   │   ├── a9a187e9f947e5d7ec2286193efa77962282bc
+│   │   │   └── d446a2baf49ef2bfebd4f4e6b7f173f75d23e2
+│   │   ├── 2f
+│   │   │   └── 619cc04407554c2546c12b4b5917dfdb3f2a07
+│   │   ├── 31
+│   │   │   └── 0c0662f89936de694d03a35f2aa4a8b8b032ad
+│   │   ├── 35
+│   │   │   └── e82af4b4cf49b73b6ada68e7eaf97523e3f445
+│   │   ├── 36
+│   │   │   └── 7558be2487a3bd4b246790720e57af09ce7256
+│   │   ├── 3e
+│   │   │   └── 4905141805699cf9e30f79d86db85fb9209c50
+│   │   ├── 44
+│   │   │   └── d545c17cff994d4a59ac672bee6ec9c8cad5c7
+│   │   ├── 47
+│   │   │   └── bd26a6736481d9903783110abbf1a38719a42d
+│   │   ├── 48
+│   │   │   └── 1bebb7c53a4dd730d69e4fd77175ac5e9cb55c
+│   │   ├── 4d
+│   │   │   ├── 36e9a629b1260fea9d32cb17f943df33c93673
+│   │   │   └── 9fe0147da43ceb30344af06c2cdfb9e9cdd20f
+│   │   ├── 4f
+│   │   │   └── 3eb80c13ceff0cca11d3d865bc3cc2a6d8564d
+│   │   ├── 55
+│   │   │   └── a9558c922564b0e786afd385751474b148864f
+│   │   ├── 58
+│   │   │   └── fbacf1d73615f8b85d28365a640dc8713a5803
+│   │   ├── 5c
+│   │   │   └── 0790cfc47ee40d29ba8d1855d5afa5653265f7
+│   │   ├── 65
+│   │   │   └── 3c9698a7cd319c4bf63ae60987ec9836b3a828
+│   │   ├── 6d
+│   │   │   └── cd6656b3dc4f6744a3c5758f0684180ed0f83d
+│   │   ├── 6f
+│   │   │   ├── 17856927093df483b335a346c9a564595f002a
+│   │   │   └── 46e0a385867c06837cada79798ecfa0d096202
+│   │   ├── 72
+│   │   │   └── 8fe50c1350f1f61c2719b6c19e1e1d92e99b6f
+│   │   ├── 75
+│   │   │   └── 0626beacafff9a55b2eabb727250ac94209cc4
+│   │   ├── 77
+│   │   │   └── 996a39a892ec553b4554b27e586f6789e5c1fa
+│   │   ├── 78
+│   │   │   └── e8a9d798d04eda6f51bcde05c7bc2e61eb2746
+│   │   ├── 79
+│   │   │   └── 3b729ad35d49d41690f3cb028d96356865df8d
+│   │   ├── 7c
+│   │   │   └── 66e59b851b34cb620de5c6622a11afffc79843
+│   │   ├── 7e
+│   │   │   ├── 504cafc66b7bf63722307791e6fca37236c910
+│   │   │   └── 83ab64f521103ca439f26e83acbd9b683664f7
+│   │   ├── 7f
+│   │   │   └── 0e0398485dca131f4d1b8edae9f77897a065ff
+│   │   ├── 80
+│   │   │   └── ec809645c1b18d0eb4ae9394fece758341dad3
+│   │   ├── 81
+│   │   │   └── 6cafeb3f69fbcf9fc2b44819a58deb1e165bb3
+│   │   ├── 82
+│   │   │   └── ac91d48ba0b27780027fdf4d88eded862ace3e
+│   │   ├── 83
+│   │   │   └── 59e7513bbcb2bfdb5ca42c9c9c22defe200f15
+│   │   ├── 85
+│   │   │   ├── 8b4905ce75198522cdf6715017698fc4ded3e6
+│   │   │   └── baee2e3ad4f106e55ea06564a1a303954d7b13
+│   │   ├── 86
+│   │   │   └── 7f8a462182eb25a82e10e9955674c798e1790a
+│   │   ├── 87
+│   │   │   ├── 2211a2df0c88ac92f7cd75529153f81200b1a2
+│   │   │   └── dffc829108f3ed8998dc35a2679e8b556b43e9
+│   │   ├── 88
+│   │   │   └── 1d7d90a4e911461836ff2deec05b81dd854e56
+│   │   ├── 8a
+│   │   │   └── 838050aba9c17e5c27b9feb87d9778802497fa
+│   │   ├── 8d
+│   │   │   └── 7b7404db78552c513fc6a3b2bc104308af4168
+│   │   ├── 8e
+│   │   │   ├── 55bf7ef9ad97d42bc44b8ffb579fa900f1c892
+│   │   │   ├── 7a951aeaf300f6b562aecd4af148405b3a39e8
+│   │   │   └── fa788319d4e58495769489f388b347862aaff9
+│   │   ├── 93
+│   │   │   ├── 3875a8663d57e885e825eab168c48b7ece19c1
+│   │   │   └── bc95f127b0003f377e685f1349a1e8fbae86e4
+│   │   ├── 94
+│   │   │   └── ee7ba104394d6491693531a351707b0b730d23
+│   │   ├── 97
+│   │   │   └── 245336564679ef3d95def17946b16d03c37cd4
+│   │   ├── 9b
+│   │   │   └── 7240e599f4170c905ab08f169bfdc09a0e7740
+│   │   ├── 9d
+│   │   │   └── afc161696708ec2cb40cbdd8f270080f447018
+│   │   ├── 9f
+│   │   │   └── 1f93b15fa413ad181ef3fbc2a66ee1e6c1ee7f
+│   │   ├── a2
+│   │   │   └── c5701af452e460fc584c30f9e0853b553d2dff
+│   │   ├── a4
+│   │   │   └── ec6c5bd0bd1daa8ad1fdc3047fefecfc8512ab
+│   │   ├── a5
+│   │   │   └── 055948a8bc692761daf9fd135fd891a5a9d46b
+│   │   ├── a6
+│   │   │   └── b4b7d39e0de946159c6b4e1e42a37817860cd5
+│   │   ├── a7
+│   │   │   └── db3616b029813e103bdfa6c84dcfd1ae87d95b
+│   │   ├── a9
+│   │   │   └── e5b453096881658d2c23111815d0b86414ade2
+│   │   ├── aa
+│   │   │   └── 0d2105057bbfb6bcaaee0918f5195042424d32
+│   │   ├── ab
+│   │   │   └── b47ee11afad61cb1fb3a905c9b59bec11c5d78
+│   │   ├── ae
+│   │   │   └── 1786428d5afda0f0d34a52f574136e578a0bea
+│   │   ├── af
+│   │   │   └── 78f5de20af20089ed299702941eb3baf740e31
+│   │   ├── b0
+│   │   │   └── 905c75827eae731570183b63d0652fad48db31
+│   │   ├── b1
+│   │   │   └── e5164e71b291b7a928c240d662b071e7344681
+│   │   ├── b3
+│   │   │   └── 9f95cefa5a68e8749d85b1ebf98320ba3b2aad
+│   │   ├── b5
+│   │   │   └── a0d24b2947ae93efd75ac294a7b36a12d257b1
+│   │   ├── b6
+│   │   │   ├── 0482419161cd2bfdd868323c22d17ad4d7398f
+│   │   │   └── 66a5d5fd8a55f22850bd34492ac3fb304c21b0
+│   │   ├── b8
+│   │   │   └── 1d7a2401f7c0baac5ab9d692a848e38c173595
+│   │   ├── b9
+│   │   │   └── f38e9c9d4c7553b15414a62aceb0ea72eed196
+│   │   ├── ba
+│   │   │   └── 8f6f277958cb0d9c39ae078abdab7501d122f9
+│   │   ├── bb
+│   │   │   └── e5bcb40283c65367701c3ab21a2636cd5c142f
+│   │   ├── bc
+│   │   │   ├── 284ff81f80275b11ee69eabe836f4fa7a23312
+│   │   │   ├── b3db3d64a072b451ddb06c4531da2b5de079e0
+│   │   │   └── bed2a15f0f73c362ed03762fc17b2a87a41d83
+│   │   ├── c0
+│   │   │   └── 96e1614b4ae77f36f08878c7051b635170e1bc
+│   │   ├── c1
+│   │   │   ├── 40c92dc5cc0bce64974cd12a8bf2f6ffd61695
+│   │   │   └── b067c5b6fd25276f55f676315b807ff1cce9a9
+│   │   ├── c2
+│   │   │   └── 4eedffcb96892e91b9a17e3fbefdb7fe02594f
+│   │   ├── c4
+│   │   │   ├── 554e581e22cd5675abb8ebb76d5ec5f3fb97f1
+│   │   │   └── f0935ed7405f4cb651aed1e96b663eec260e9a
+│   │   ├── c7
+│   │   │   └── 5cb25dd2e3d7cf070fdbf55f9b85654ed59e58
+│   │   ├── c9
+│   │   │   └── 5d60166c04d1f574448ba653c0ee101f5c05bc
+│   │   ├── cd
+│   │   │   └── 0d8ab735cde55ba72f88bad8f6a29c45b1b9f9
+│   │   ├── d2
+│   │   │   └── c474e42f65739d5d1c22f9d302a496643e04f5
+│   │   ├── d4
+│   │   │   ├── 2bc5dbebb5b1d25596ea94282fa45c3f0eb840
+│   │   │   └── bd2d7724ebc175be7dfb80ace58ab74a44c731
+│   │   ├── d5
+│   │   │   └── c9c2d6ab18cff98325bab897672ac212e4c9b3
+│   │   ├── da
+│   │   │   └── c0de31834701540f2bcefd326a71eedb9dbf46
+│   │   ├── df
+│   │   │   └── aac06d7ddca67bf9432969099f1ca7aed74f75
+│   │   ├── e3
+│   │   │   └── 152542180685caf0948c4ec8d9ebe003cf59db
+│   │   ├── e7
+│   │   │   ├── 36957adf7f2db119e5f9a7e91d7e5b7bb37889
+│   │   │   └── 53076a83ec4a249eb64f28f1e1ad989f83218d
+│   │   ├── e8
+│   │   │   ├── d525c896322b05bacc5fe912ececb597f39977
+│   │   │   └── e93131c06353442bed3ebee3a7ccf9fa0a70ab
+│   │   ├── eb
+│   │   │   └── 962f26f14da2f24e7ed20d3e4ea0ffdc97500b
+│   │   ├── ef
+│   │   │   ├── 2889c3c3b2e957bcf23b134ab62de645b034e1
+│   │   │   └── fd05f0b0c4c95c575ee564d67a08e44f2a11a3
+│   │   ├── f4
+│   │   │   └── 044beca7526bbe8d49fe5cf63ce7627aec5832
+│   │   ├── fd
+│   │   │   └── c0a304567e5cf68ffc526e668c382e88d7a112
+│   │   ├── ff
+│   │   │   └── 5b74947d75f9c910258e0c5675236b96c48905
+│   │   ├── info
+│   │   └── pack
+│   └── refs
+│       ├── heads
+│       │   └── main
+│       ├── remotes
+│       │   └── origin
+│       └── tags
+├── project_tree_full.txt
+├── README.md
+└── Scripts
+    ├── Cinematic
+    │   ├── ShipCinematicController.cs
+    │   ├── ShipCinematicController.cs.meta
+    │   ├── SkyBgScroller.cs
+    │   └── SkyBgScroller.cs.meta
+    ├── Cinematic.meta
+    ├── Common
+    │   ├── GlobalVariables.cs
+    │   ├── GlobalVariables.cs.meta
+    │   ├── PlatformDetector.cs
+    │   ├── PlatformDetector.cs.meta
+    │   ├── PlatformType.cs
+    │   ├── PlatformType.cs.meta
+    │   ├── SceneTransitionManager.cs
+    │   ├── SceneTransitionManager.cs.meta
+    │   ├── ScrollBottomDetector.cs
+    │   ├── ScrollBottomDetector.cs.meta
+    │   ├── UI_HoldButton.cs
+    │   ├── UI_HoldButton.cs.meta
+    │   ├── UserPreferences.cs
+    │   └── UserPreferences.cs.meta
+    ├── Common.meta
+    ├── Enemies
+    │   ├── Bullet.cs
+    │   ├── Bullet.cs.meta
+    │   ├── Enemy.cs
+    │   ├── Enemy.cs.meta
+    │   ├── EnemyBullet.cs
+    │   ├── EnemyBullet.cs.meta
+    │   ├── EnemyGroupController.cs
+    │   ├── EnemyGroupController.cs.meta
+    │   ├── PowerUp.cs
+    │   ├── PowerUp.cs.meta
+    │   ├── PowerUpSpawner.cs
+    │   ├── PowerUpSpawner.cs.meta
+    │   ├── Wave.cs
+    │   └── Wave.cs.meta
+    ├── Enemies.meta
+    ├── Environment
+    │   ├── CameraShake.cs
+    │   ├── CameraShake.cs.meta
+    │   ├── GalaxyQuadBg.cs
+    │   └── GalaxyQuadBg.cs.meta
+    ├── Environment.meta
+    ├── Input
+    │   ├── PlayerInputActions.cs
+    │   ├── PlayerInputActions.cs.meta
+    │   ├── PlayerInputActions.inputactions
+    │   └── PlayerInputActions.inputactions.meta
+    ├── Input.meta
+    ├── Managers
+    │   ├── AudioManager.cs
+    │   ├── AudioManager.cs.meta
+    │   ├── ConditionsManager.cs
+    │   ├── ConditionsManager.cs.meta
+    │   ├── CreditsManager.cs
+    │   ├── CreditsManager.cs.meta
+    │   ├── GameManager.cs
+    │   ├── GameManager.cs.meta
+    │   ├── IntroManager.cs
+    │   ├── IntroManager.cs.meta
+    │   ├── LoadingManager.cs
+    │   ├── LoadingManager.cs.meta
+    │   ├── MainMenuManager.cs
+    │   ├── MainMenuManager.cs.meta
+    │   ├── OptionsManager.cs
+    │   ├── OptionsManager.cs.meta
+    │   ├── StartupManager.cs
+    │   ├── StartupManager.cs.meta
+    │   ├── UIManager.cs
+    │   ├── UIManager.cs.meta
+    │   ├── VersionManager.cs
+    │   └── VersionManager.cs.meta
+    ├── Managers.meta
+    ├── Options
+    │   ├── AudioOptions.cs
+    │   ├── AudioOptions.cs.meta
+    │   ├── LanguageManager.cs
+    │   ├── LanguageManager.cs.meta
+    │   ├── LanguageOptions.cs
+    │   ├── LanguageOptions.cs.meta
+    │   ├── QualityOptions.cs
+    │   ├── QualityOptions.cs.meta
+    │   ├── ResolutionOptions.cs
+    │   └── ResolutionOptions.cs.meta
+    ├── Options.meta
+    ├── Player
+    │   ├── Laser.cs
+    │   ├── Laser.cs.meta
+    │   ├── PlayerHealth.cs
+    │   ├── PlayerHealth.cs.meta
+    │   ├── PlayerManager.cs
+    │   ├── PlayerManager.cs.meta
+    │   ├── PlayerMovement.cs
+    │   ├── PlayerMovement.cs.meta
+    │   ├── PlayerPowerUpHandler.cs
+    │   ├── PlayerPowerUpHandler.cs.meta
+    │   ├── PlayerShooter.cs
+    │   ├── PlayerShooter.cs.meta
+    │   ├── RunAndGunController.cs
+    │   ├── RunAndGunController.cs.meta
+    │   ├── ShootEmUpController.cs
+    │   ├── ShootEmUpController.cs.meta
+    │   ├── WeaponManager.cs
+    │   └── WeaponManager.cs.meta
+    ├── Player.meta
+    ├── UI
+    │   ├── BlinkingButton.cs
+    │   ├── BlinkingButton.cs.meta
+    │   ├── ButtonSound.cs
+    │   ├── ButtonSound.cs.meta
+    │   ├── ImageSlider.cs
+    │   ├── ImageSlider.cs.meta
+    │   ├── SpinnerController.cs
+    │   └── SpinnerController.cs.meta
+    ├── UI.meta
+    ├── Weapon
+    └── Weapon.meta
